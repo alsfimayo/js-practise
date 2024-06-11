@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+            body{
+                  background-color: black;
+            }
+            .week{
+                  
+                  color: white;
+            }
+      </style>
+</head>
+<body>
+      <div class="week">
+            <div class="days">Monday</div>
+            <div class="days">Tuesday</div>
+            <div class="days">wednesday</div>
+            <div class="days">Thirsday</div>
+            <div class="days">Friday</div>
+            <div class="days">Saturday</div>
+            <div class="days">Sunday</div>
+      </div>
+</body>
+<script>
+     const newWeek=document.querySelector('.week');
+     console.log(newWeek);
+      console.log(newWeek.children);
+      console.log(newWeek.children[1].textContent);
+     for(let i=0; i<newWeek.children.length; i++){
+      console.log(newWeek.children[i].innerHTML)
+      }
+console.log(newWeek.firstElementChild.innerHTML);
+newWeek.firstElementChild.style.color="red";
+const dayone=document.querySelector('.days');
+console.log(dayone);
+console.log(dayone.parentElement);
+const newWeek=document.querySelector('.week');
+
+     console.log("NODES:",newWeek.childNodes);
+
+
+     
+
+
+     
+
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <ul class="language">
+            <li>Html</li>
+            <li>Css</li>
+      </ul>
+</body>
+<script>
+      // function myFun(lang){
+
+      //       const Li= document.createElement('li');
+      //       Li.innerHTML=`${lang}`;
+      //       document.querySelector('.language').appendChild(Li);
+      // }
+      // myFun("javaScript");
+      //optimization method;
+function addOpt(lang){
+     const Li= document.createElement('li');
+     //Li.style.color="blue";
+     Li.appendChild(document.createTextNode(lang));
+     document.querySelector('.language').appendChild(Li);
+}
+addOpt("python");
+ const asdf=document.querySelector("li:nth-child(2)");
+ asdf.textContent="aliahmad";
+ const lis=document.querySelector("li:first-child");
+ lis.outerHTML="<li>usama</li>";
+ const rem=document.querySelector('li:last-child');
+ rem.remove();
+      </script>
+</html>
